@@ -1,0 +1,24 @@
+#define _CRT_SECURE_NO_WARNINGS
+
+/* Title: Homework 8 - Chapter 6 - Problem 1
+	Author: Victor M. Barba
+	Date: 4/12/20
+	Description: Pointers ?
+*/
+
+#include <stdio.h>
+
+int main(void)
+{
+
+	int m = 10, n = 5;
+	int *mp, *np;
+	mp = &m;
+	np = &n;
+	*mp = *mp + *np;
+	*np = *mp - *np;
+
+	printf("%d %d\n%d %d\n", m, *mp, n, *np);
+
+	return (0);
+}
